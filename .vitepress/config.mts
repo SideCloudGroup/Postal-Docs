@@ -13,41 +13,48 @@ export default defineConfig({
         nav: [],
 
         sidebar: {
-            "/docs/": [
-                {text: "使用须知", link: "/docs/index.md"},
-                {text: "开始使用", link: "/docs/start.md"},
+            "/": [
+                {text: "使用须知", link: "/index.md"},
+                {
+                    text: "开始使用",
+                    items: [
+                        {text: "创建服务器", link: "/start/create-server.md"},
+                        {text: "绑定域名", link: "/start/add-domain.md"},
+                    ],
+                },
                 {
                     text: "对接您的程序",
                     items: [
                         {
                             text: "V2Board",
-                            link: "/docs/interface/v2b.md",
+                            link: "/interface/v2b.md",
                         },
                         {
                             text: "SSPanel",
-                            link: "/docs/interface/ssp.md",
+                            link: "/interface/ssp.md",
                         },
                         {
                             text: "WHMCS",
-                            link: "/docs/interface/whmcs.md",
+                            link: "/interface/whmcs.md",
                         },
                         {
                             text: "使用SMTP接口",
-                            link: "/docs/interface/smtp.md",
+                            link: "/interface/smtp.md",
                         },
                         {
                             text: "使用API接口",
-                            link: "/docs/interface/api.md",
+                            link: "/interface/api.md",
                         },
                     ],
                 },
-                {text: "收信配置", link: "/docs/receive.md"},
+                {text: "收信配置", link: "/receive.md"},
                 {
                     text: "其他",
                     items: [
-                        {text: "手动群发", link: "/docs/others/massmail.md"},
+                        {text: "手动群发", link: "https://github.com/SideCloudGroup/massmail"},
+                        {text: "独享定制", link: "https://cloudsides.com/index.php/store/postal/postal-dedicated"},
                         {text: "联系技术支持", link: "https://t.me/sidecloudmailsupport_bot"},
-                        {text: "（推广）AppleID自动解锁", link: "https://appleautoo.pro"},
+                        {text: "（推广）AppleID自动解锁", link: "https://appleauto.pro"},
                     ]
                 }
             ],

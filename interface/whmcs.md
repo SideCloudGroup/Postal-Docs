@@ -4,4 +4,4 @@
 
 ## 开始使用
 
-请查看插件 [Postal-For-V2Board](https://github.com/SideCloudGroup/Postal-For-V2Board)
+请查看插件 [Postal-MailProvider-For-WHMCS](https://github.com/SideCloudGroup/Postal-MailProvider-For-WHMCS)

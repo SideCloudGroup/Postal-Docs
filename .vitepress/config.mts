@@ -53,7 +53,7 @@ export default defineConfig({
                     items: [
                         {text: "手动群发", link: "https://github.com/SideCloudGroup/massmail"},
                         {text: "独享定制", link: "https://cloudsides.com/index.php/store/postal/postal-dedicated"},
-                        {text: "联系技术支持", link: "https://t.me/sidecloudmailsupport_bot"},
+                        {text: "联系技术支持", link: "https://t.me/SideCloudCSBot"},
                         {text: "（推广）AppleID自动解锁", link: "https://appleauto.pro"},
                     ]
                 }

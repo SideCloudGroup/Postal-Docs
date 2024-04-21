@@ -1,5 +1,9 @@
 # 在 V2Board 使用 API 对接邮局服务
 
+::: warning 警告
+此插件仅适用于V2Board。 XBoard用户请使用SMTP对接。
+:::
+
 在开始对接前，请确保您已完成[开始使用](/start/create-server)中的所有步骤，并已阅读[使用API对接](/interface/api)。
 
 ## 安装插件

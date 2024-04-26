@@ -30,6 +30,10 @@ export default defineConfig({
                             link: "/interface/v2b.md",
                         },
                         {
+                            text: "XBoard",
+                            link: "/interface/xboard.md",
+                        },
+                        {
                             text: "SSPanel",
                             link: "/interface/ssp.md",
                         },

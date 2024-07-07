@@ -11,7 +11,7 @@
 在V2Board网站根目录下执行以下命令：
 
 ```bash
-composer require postal/postal
+php composer.phar require "postal/postal:^2.0.1"
 ```
 
 ## 配置发信

@@ -1,25 +1,27 @@
 # 绑定域名
 
-在面板内，你可以看到邮件服务器，如图`MailServer`所示。点击进入。
+在面板中找到邮件服务器（如图所示的 `MailServer`），点击进入。
 
 ![](/assets/images/mail-server.png)
 
-点击 "Domain" 绑定发信域名，点击 `Add Domain` 添加你要用于发信的域名。
+在 **Domain** 页面点击 **Add Domain**，添加用于发信的域名。
 
 ![](/assets/images/add-domain-1.png)
 
-这里建议添加一级域名，解析发信不会影响网站解析。
+建议添加一级域名，发信相关的 DNS 解析不会影响网站现有解析。
 
 ![](/assets/images/add-domain-2.png)
 
-完成添加后，需要验证域名所有权。
+添加完成后，需要验证域名所有权。
 
-添加一条解析，类型**TXT**，子域为 **@**，记录值为**灰色框内全部内容**
+## 验证域名所有权
+
+添加一条 **TXT** 解析记录：子域为 **@**，记录值为面板灰色框内的**全部内容**。
 
 ![](/assets/images/add-domain-txt.png)
 
-完成上方解析后，点击 `Verify TXT record` ，进入下一步的解析
+完成 TXT 解析后，点击 **Verify TXT record**，进入下一步 DNS 配置。
 
 ![](/assets/images/domain-dns.png)
 
-请按照提示添加域名解析，完成后点击 `Check my records are correct` 。如有不通过，请检查解析是否正确。解析可能需要30秒左右生效。
+按面板提示添加其余 DNS 记录，完成后点击 **Check my records are correct**。如有未通过的项，请检查解析是否正确；DNS 生效通常需要约 30 秒。

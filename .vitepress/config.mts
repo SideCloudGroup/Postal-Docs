@@ -1,8 +1,8 @@
 import {defineConfig} from "vitepress";
 
 export default defineConfig({
-    title: "Postal",
-    description: "Documentation for Postal",
+    title: "Postal 邮局",
+    description: "Postal 邮局服务使用文档",
 
     themeConfig: {
         search: {
@@ -14,7 +14,7 @@ export default defineConfig({
 
         sidebar: {
             "/": [
-                {text: "使用须知", link: "/index.md"},
+                {text: "概览", link: "/index.md"},
                 {
                     text: "开始使用",
                     items: [
@@ -26,12 +26,12 @@ export default defineConfig({
                     text: "对接您的程序",
                     items: [
                         {
-                            text: "V2Board",
-                            link: "/interface/v2b.md",
+                            text: "SMTP 对接（推荐）",
+                            link: "/interface/smtp.md",
                         },
                         {
-                            text: "XBoard",
-                            link: "/interface/xboard.md",
+                            text: "V2Board",
+                            link: "/interface/v2b.md",
                         },
                         {
                             text: "SSPanel",
@@ -42,11 +42,7 @@ export default defineConfig({
                             link: "/interface/whmcs.md",
                         },
                         {
-                            text: "使用SMTP接口",
-                            link: "/interface/smtp.md",
-                        },
-                        {
-                            text: "使用API接口",
+                            text: "API 对接",
                             link: "/interface/api.md",
                         },
                     ],

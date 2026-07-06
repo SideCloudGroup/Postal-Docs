@@ -1,20 +1,25 @@
 # SMTP 对接
 
-如果你使用的程序支持通过Postal API发送邮件，请优先使用更高效的API接口。
+SMTP 是最通用的发信方式，**推荐作为默认对接方案**。绝大多数程序均支持 SMTP，配置简单、兼容性最好。
+
+若您的程序已内置 Postal API 支持且提供了专用对接教程，也可参考对应平台的 API 对接文档。
 
 ## 查看 SMTP 参数
 
-点击面板右上角`Help`，可以看到SMTP服务器 用户名 密码等参数。
+点击面板右上角的 **Help**，即可查看 SMTP 服务器地址、用户名、密码等参数。
+
 ![](/assets/images/smtp-help.png)
 
 ![](/assets/images/smtp-detail.png)
 
-初次使用需要创建Credentials (密码)，type选择SMTP
+## 创建 Credentials
 
-Sender (发信人) 的格式为 XXX@你的域名，其中XXX可以随意填写
+首次使用需创建 Credentials（密码），**Type** 选择 **SMTP**。
 
-注意：Username的斜杠并非表示“或”，需要完整填写
+**Sender**（发件人）格式为 `xxx@你的域名`，其中 `xxx` 可随意填写。
 
-如果你的程序不支持同时使用username和sender参数，在用户名处填写你的发件邮箱即可
-
-SMTP未开启SSL，在配置时请不要开启加密
+::: warning 注意
+- **Username** 中的斜杠不是「或」的意思，需要完整填写。
+- 若程序不支持同时配置 Username 和 Sender，直接在用户名处填写发件邮箱即可。
+- SMTP **未启用 SSL**，配置时请勿开启加密选项。
+:::

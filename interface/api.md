@@ -1,35 +1,38 @@
 # API 对接
 
-API对接能够使邮件发送更快，配置更简单，并提高邮件送达率。
+API 对接发送效率更高，部分程序可通过插件实现一键配置。
 
-如果程序支持API，我们建议您优先使用API对接，优化您的发件体验。
+::: tip 建议
+优先使用 [SMTP 对接](/interface/smtp)。仅当您的程序已内置 Postal API 支持，或提供了专用 API 插件时，再考虑 API 方式。
+:::
 
-## 使用 API 接口
+## 创建 API Credentials
 
-### 创建 API Credentials (密钥）
-
-在Credentials页面点击`Add credential`新建密钥，即可创建一个新的密钥。
+在 **Credentials** 页面点击 **Add credential** 新建密钥。
 
 ![](/assets/images/create-api-credentials.png)
 
-创建时，TYPE请选择API，NAME处随意填写名称，然后点击Create credentials。请注意，`API密钥` 与 `SMTP密钥` **不通用**。
+创建时 **TYPE** 选择 **API**，**NAME** 填写便于识别的名称，然后点击 **Create credentials**。
+
+::: warning 注意
+**API 密钥** 与 **SMTP 密钥** 不通用，请分别创建。
+:::
 
 ![](/assets/images/create-api-credentials2.png)
 
-现在，在Credentials页面，你将可以看到随机生成的API密钥
+创建完成后，可在 Credentials 页面查看随机生成的 API 密钥。
 
-### 常用参数说明
+## 常用参数
 
-使用API发件，通常需要4个参数：
+使用 API 发件通常需要以下 4 个参数：
 
-`API地址` 邮局面板的地址 `https://panel.sidecloud.cc` ，结尾无需斜杠
-
-`API密钥` 就是上面创建的API credential
-
-`发件邮箱` 请填写xxx@你的域名，xxx可随意指定
-
-`发件人名` 显示的发件人名称，可随意填写
+| 参数 | 说明 |
+|------|------|
+| API 地址 | 邮局面板地址，如 `https://panel.sidecloud.cc`，末尾无需斜杠 |
+| API 密钥 | 上文创建的 API Credential |
+| 发件邮箱 | 格式为 `xxx@你的域名`，`xxx` 可随意指定 |
+| 发件人名 | 显示的发件人名称，可随意填写 |
 
 ## API 文档
 
-请参阅 https://apiv1.postalserver.io/
+请参阅 [Postal API 官方文档](https://apiv1.postalserver.io/)。
